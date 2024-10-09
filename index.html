@@ -10,12 +10,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -23,17 +17,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Homework2</title>
   </head>
   <body>
-    <header id="top">
-      <div class="container container-navigation">
-        <nav>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
           <a class="color" href="./index.html"
             >Web<span class="logo">Studio</span></a
           >
-          <ul>
+          <ul class="header-list">
             <li><a class="navi-item" href="./index.html">Studio</a></li>
             <li><a class="navi-item" href="">Portfolio</a></li>
             <li><a class="navi-item" href="">Contacts</a></li>
@@ -41,7 +42,7 @@
         </nav>
 
         <address class="address">
-          <ul>
+          <ul class="address-list">
             <li>
               <a class="link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -65,34 +66,34 @@
       </section>
 
       <!--Section 2-->
-      <section>
+      <section class="section-second">
         <div class="container">
-          <h2 class="hidden-text">Hello World</h2>
+          <h2 class="visually-hidden">Hello World</h2>
           <ul class="features-list">
-            <li>
+            <li class="features-list-item">
               <h3 class="main-text">Strategy</h3>
-              <p class="p-text">
+              <p class="paragraph-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li>
+            <li class="features-list-item">
               <h3 class="main-text">Punctuality</h3>
-              <p class="p-text">
+              <p class="paragraph-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li>
+            <li class="features-list-item">
               <h3 class="main-text">Diligence</h3>
-              <p class="p-text">
+              <p class="paragraph-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="features-list-item">
               <h3 class="main-text">Technologies</h3>
-              <p class="p-text">
+              <p class="paragraph-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -108,13 +109,16 @@
           <ul class="our-team-list">
             <li class="our-team-item">
               <img
+                class="avatar"
                 src="./images/Design.jpg"
                 alt="A man with a beard in one's shirt-sleeves"
                 width="264"
                 height="260"
               />
-              <h3 class="main-text">Mark Guerrero</h3>
-              <p class="p-text">Product Designer</p>
+              <div class="woker-name">
+                <h3 class="main-text">Mark Guerrero</h3>
+              </div>
+              <p class="paragraph-text">Product Designer</p>
             </li>
             <li class="our-team-item">
               <img
@@ -123,8 +127,8 @@
                 width="264"
                 height="260"
               />
-              <h3 class="main-text">Tom Ford</h3>
-              <p class="p-text">Frontend Developer</p>
+              <div class="woker-name"><h3 class="main-text">Tom Ford</h3></div>
+              <p class="paragraph-text">Frontend Developer</p>
             </li>
             <li class="our-team-item">
               <img
@@ -133,8 +137,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="main-text">Camila Garcia</h3>
-              <p class="p-text">Marketing</p>
+              <div class="woker-name">
+                <h3 class="main-text">Camila Garcia</h3>
+              </div>
+              <p class="paragraph-text">Marketing</p>
             </li>
             <li class="our-team-item">
               <img
@@ -143,8 +149,10 @@
                 width="264"
                 height="260"
               />
-              <h3 class="main-text">Daniel Wilson</h3>
-              <p class="p-text">UI Designer</p>
+              <div class="woker-name">
+                <h3 class="main-text">Daniel Wilson</h3>
+              </div>
+              <p class="paragraph-text">UI Designer</p>
             </li>
           </ul>
         </div>
@@ -163,8 +171,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="main-text">Banking App</h3>
-              <p class="p-text">App</p>
+              <div class="portfolio-text">
+                <h3 class="main-text">Banking App</h3>
+                <p class="paragraph-text">App</p>
+              </div>
             </li>
             <li class="our-portfolio-item">
               <img
@@ -173,8 +183,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="main-text">Cashless Payment</h3>
-              <p class="p-text">Marketing</p>
+              <div class="portfolio-text">
+                <h3 class="main-text">Cashless Payment</h3>
+                <p class="paragraph-text">Marketing</p>
+              </div>
             </li>
             <li class="our-portfolio-item">
               <img
@@ -183,8 +195,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="main-text">Meditation App</h3>
-              <p class="p-text">App</p>
+              <div class="portfolio-text">
+                <h3 class="main-text">Meditation App</h3>
+                <p class="paragraph-text">App</p>
+              </div>
             </li>
             <li class="our-portfolio-item">
               <img
@@ -193,8 +207,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="main-text">Taxi Service</h3>
-              <p class="p-text">Marketing</p>
+              <div class="portfolio-text">
+                <h3 class="main-text">Taxi Service</h3>
+                <p class="paragraph-text">Marketing</p>
+              </div>
             </li>
             <li class="our-portfolio-item">
               <img
@@ -203,8 +219,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="main-text">Screen Illustrations</h3>
-              <p class="p-text">Design</p>
+              <div class="portfolio-text">
+                <h3 class="main-text">Screen Illustrations</h3>
+                <p class="paragraph-text">Design</p>
+              </div>
             </li>
             <li class="our-portfolio-item">
               <img
@@ -213,8 +231,10 @@
                 width="360"
                 height="300"
               />
-              <h3 class="main-text">Online Courses</h3>
-              <p class="p-text">Marketing</p>
+              <div class="portfolio-text">
+                <h3 class="main-text">Online Courses</h3>
+                <p class="paragraph-text">Marketing</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -223,7 +243,7 @@
 
     <footer class="footer">
       <div class="container">
-        <a class="color" href="./index.html"
+        <a class="color footer-link" href="./index.html"
           >Web<span class="studio">Studio</span></a
         >
         <p class="footer-text">
