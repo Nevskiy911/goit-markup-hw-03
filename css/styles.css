@@ -206,6 +206,7 @@ nav ul li:last-child {
     color: #2E2F42;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .paragraph-text {
@@ -234,10 +235,11 @@ nav ul li:last-child {
     margin: 72px 0 120px;
     padding-bottom: 32px;
     row-gap: 48px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .avatar {
-    border-radius: 0px 0px 4px 4px;
+    
 }
 
 .worker-name {
@@ -246,7 +248,7 @@ nav ul li:last-child {
 
 .section-fourth {
     text-align: center;
-    margin: 120px 0;
+    padding: 120px 0;
 }
 
 .our-portfolio-list {
